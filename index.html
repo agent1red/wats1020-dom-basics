@@ -1,29 +1,35 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Fortune Cookie Generator</title>
-        <meta name="description" content="This page generates fortune cookie sayings.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="main.css">
-        <script type="text/javascript" src="fortune-cookie-generator.js"></script>
-    </head>
-    <body>
-        <h1>Fortune Cookie Generator</h1>
-        <p>Use this page to generate fortune cookie sayings.</p>
-        <div class="fortune-cookie-saying-wrapper">
-            <p id="fortune-cookie-text">Click the button to generate a saying.</p>
-        </div>
-        <!-- TODO: Make this button execute the `generateFortuneCookie()` function. -->
-        <button class="generate-button">
-            Make My Fortune!
-        </button>
-        <hr>
-        <h2>Previous Fortunes</h2>
-        <ul id="previous-fortunes-container">
-        <!-- TODO: Modify javascript so previously generated fortunes are listed here. -->
-        </ul>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Fortune Cookie Generator</title>
+  <meta name="description" content="This page generates fortune cookie sayings.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="fortune-cookie-generator.js"></script>
+</head>
+
+<body>
+  <div id="titleDiv">   <h1>Fortune Cookie Generator</h1>
+  <p>Use this page to generate fortune cookie sayings.</p></div>
+
+  
+<button type="button" onclick="runRandomColor() ">Set Random Colors</button>
+  <div class="fortune-cookie-saying-wrapper">
+    <p id="fortune-cookie-text">Click the button to generate a saying.</p>
+  </div>
+  <!-- TODO: Make this button execute the `generateFortuneCookie()` function. -->
+  <!-- took the name of the default button and aded it to an on clik buton function           -->
+  <button onclick='generateFortuneCookie()' class="generate-button">Make My Fortune!</button>
+
+  <hr>
+  <h2>Previous Fortunes</h2>
+  <ul id="previous-fortunes-container">
+    <!-- TODO: Modify javascript so previously generated fortunes are listed here. -->
+  </ul>
+</body>
+
 </html>
